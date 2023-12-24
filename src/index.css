@@ -1,0 +1,26 @@
+:root {
+  --foreground-color: 0, 0, 0;
+  --background-color: 256, 256, 256;
+  --primary-color: 4, 150, 199;
+  --negative-color: 256, 0, 0;
+  --green-color: 0, 156, 0;
+  --red-color: 256, 0, 0;
+  --very-large-font: 30px;
+  --large-font: 22px;
+  --medium-font: 18px;
+  --small-font: 15px;
+  --very-small-font: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  background-color: rgb(var(--background-color));
+  color: rgb(var(--foreground-color));
+  font-family: Arial, Helvetica, sans-serif;
+}

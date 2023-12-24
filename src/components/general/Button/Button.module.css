@@ -1,0 +1,40 @@
+.button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+    border: 1px solid transparent;
+    font-size: var(--medium-font);
+    position: relative;
+}
+
+.button.loading {
+    color: transparent;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+.large {
+    padding: 10px 25px;
+}
+
+.primary {
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--background-color));
+}
+
+.cancel {
+    background-color: transparent;
+    border-color: rgba(var(--foreground-color), 0.3);
+}
+
+.accept {
+    color: rgb(var(--background-color));
+    background-color: rgb(var(--green-color));
+}

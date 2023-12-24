@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    gap: 10px;
+    font-size: var(--very-small-font);
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-text {
+    font-weight: bold;
+}

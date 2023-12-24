@@ -1,0 +1,31 @@
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--small-font);
+    min-width: 300px;
+    border-radius: 10px;
+    background-color: rgba(var(--primary-color), 0.075);
+}
+
+.profile-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.name-rating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    font-size: var(--medium-font);
+    font-weight: bold;
+}
+
+.review {
+    opacity: 0.7;
+}

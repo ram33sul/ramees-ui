@@ -1,0 +1,23 @@
+.container {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    background-color: rgb(var(--background-color));
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}

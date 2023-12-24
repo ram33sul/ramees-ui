@@ -1,0 +1,16 @@
+.container {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(var(--foreground-color), 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.round {
+    border-radius: 50%;
+    background-color: rgba(var(--foreground-color), 0.7);
+    margin-top: 3px;
+}

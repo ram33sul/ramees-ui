@@ -1,0 +1,8 @@
+.image {
+    transition: all 0.1s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}

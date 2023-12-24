@@ -1,0 +1,16 @@
+{
+  "name": "ramees-ui",
+  "version": "1.0.14",
+  "description": "intial version",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rameesul yoonus MTP",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
+  }
+}
