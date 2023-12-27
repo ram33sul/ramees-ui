@@ -1,0 +1,54 @@
+.container {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(var(--foreground-color), 0.2);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.container:hover {
+    opacity: 0.4;
+}
+
+.container:active {
+    opacity: 1;
+}
+
+.children {
+    flex-grow: 1;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    min-width: 200px;
+    max-width: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.label {
+   font-weight: bold;
+   font-size: var(--small-font);
+   text-transform: capitalize;
+}
+
+.label.pending {
+    font-weight: normal;
+}
+
+.label.accepted {
+    color: rgb(var(--green-color));
+}
+
+.label.rejected {
+    color: rgb(var(--negative-color));
+}

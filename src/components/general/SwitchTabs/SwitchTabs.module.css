@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.label {
+    flex-grow: 1;
+    text-align: center;
+    background-color: rgba(var(--foreground-color), 0.05);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.label.active {
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--background-color));
+}
+
+.label.active:hover {
+    color: rgb(var(--background-color));
+}
+
+.label:hover {
+    border-color: rgb(var(--primary-color));
+    color: rgb(var(--primary-color));
+}
