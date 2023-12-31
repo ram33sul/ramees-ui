@@ -1,0 +1,21 @@
+.container {
+    font-size: var(--medium-font);
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(var(--foreground-color), 0.1);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.container:hover {
+    opacity: 0.5;
+}
+
+.container:active {
+    transform: scale(1.1);
+}

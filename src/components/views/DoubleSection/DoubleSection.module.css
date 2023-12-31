@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    height: calc(100% - 135px);
+    margin-top: 90px;
+}
+
+.container.no-subheader {
+    height: calc(100% - 90px);
+}
+
+.left-section {
+    padding: 50px 20px 50px 80px;
+    gap: 50px;
+    width: 26%;
+    background-color: rgba(var(--foreground-color), 0.05);
+    min-width: 26%;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.left-section::-webkit-scrollbar {
+    display: none;
+}
+
+.right-section {
+    padding: 50px 80px ;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.right-section::-webkit-scrollbar {
+    display: none;
+}

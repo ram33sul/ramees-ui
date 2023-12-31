@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.selection {
+    color: rgb(var(--foreground-color));
+    background-color: rgba(var(--foreground-color), 0.05);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.selection:hover {
+    border-color: rgb(var(--foreground-color));
+}
+
+.selection.active {
+    background-color: rgb(var(--foreground-color));
+    color: rgb(var(--background-color));
+    opacity: 1 !important;
+}
+
+.selection.inactive {
+    opacity: 0.5;
+}

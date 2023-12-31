@@ -1,0 +1,24 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.status {
+    font-size: var(--large-font);
+    font-weight: bold;
+        color: rgb(var(--negative-color));
+}
+
+.message {
+    font-weight: bold;
+    font-size: var(--large-font);
+}
+
+.description {
+    opacity: 0.6;
+    padding-bottom: 40px;
+}

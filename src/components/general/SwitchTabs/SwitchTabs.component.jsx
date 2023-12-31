@@ -6,6 +6,7 @@ export default function SwitchTabs({ tabs }) {
       {tabs.map(({ label, onClick, isActive }) => {
         return (
           <div
+            key={label}
             onClick={onClick}
             className={`${styles.label} ${isActive ? styles.active : ""}`}
           >

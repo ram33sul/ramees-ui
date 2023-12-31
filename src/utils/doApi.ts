@@ -2,16 +2,16 @@ import axiosInstance from "../axios/axiosInstance";
 
 type DoApiProps = {
   url: string;
-  data: unknown;
-  method: "GET" | "POST" | "PUT" | "DELETE";
-  setLoading: (state: boolean) => void;
+  data?: unknown;
+  method?: "GET" | "POST" | "PUT" | "DELETE";
+  setLoading?: (state: boolean) => void;
 };
 
 const doApi = async ({
   url,
   data,
   method = "POST",
-  setLoading,
+  setLoading = () => {},
 }: DoApiProps) => {
   try {
     setLoading(true);

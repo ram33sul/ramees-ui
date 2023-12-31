@@ -27,3 +27,18 @@
     border-color: rgb(var(--primary-color));
     color: rgb(var(--primary-color));
 }
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 840px) {
+    .container {
+        gap: 10px;
+        overflow-x: scroll;
+    }
+
+    .label {
+        min-width: fit-content;
+    }
+}

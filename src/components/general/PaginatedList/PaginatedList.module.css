@@ -1,0 +1,21 @@
+.loader {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.completed {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.error {
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(var(--negative-color));
+    text-align: center;
+}

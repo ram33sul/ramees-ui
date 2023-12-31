@@ -1,0 +1,18 @@
+.container {
+    background-color: rgba(var(--foreground-color), 0.05);
+    padding: 20px 80px;
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 1040px) {
+    .container {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        padding: 15px;
+        margin-top: 50px;
+    }
+}

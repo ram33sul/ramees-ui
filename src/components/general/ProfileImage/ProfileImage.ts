@@ -1,3 +1,4 @@
 export type Props = {
-    size?: number
-}
+  size?: number;
+  imageUrl?: string | null;
+};
