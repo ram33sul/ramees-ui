@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React,{ ReactNode } from 'react';
 import styles from './SingleSection.module.css';
 import { colorTypes } from './SingleSection.util';
 

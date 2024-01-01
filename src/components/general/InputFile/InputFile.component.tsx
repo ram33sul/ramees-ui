@@ -2,6 +2,7 @@ import { ChangeEventHandler, useMemo, useRef } from "react";
 import styles from "./InputFile.module.css";
 import { getFileName, getFileUrl } from "../../../utils/urlUploadFile";
 import { accepts } from "./InputFile.util";
+import React from 'react';
 
 type Props = {
   value: string | File,

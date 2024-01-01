@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Selections.module.css";
+import React from 'react';
 
 type SelectionType = {
   label: string,

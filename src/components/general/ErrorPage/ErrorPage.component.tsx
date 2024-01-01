@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ErrorPage.module.css";
 import SingleSection from "../../views/SingleSection/SingleSection.component";
 import Button from "../Button/Button.component";
+import React from 'react';
 
 export default function ErrorPage({
   status = 400,

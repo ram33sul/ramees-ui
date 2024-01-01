@@ -5,6 +5,7 @@ import Button from "../Button/Button.component";
 import Loader from "../Loader/Loader.component";
 import styles from "./PaginatedList.module.css";
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
+import React from 'react';
 
 type Props = {
   CardComponent: FC,

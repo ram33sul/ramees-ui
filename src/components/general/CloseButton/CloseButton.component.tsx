@@ -1,6 +1,7 @@
 import styles from "./CloseButton.module.css";
 import { Props } from "./CloseButton.types";
 import { colorTypesMap } from "./CloseButton.util";
+import React from 'react';
 
 export default function CloseButton({
   colorType = "same",

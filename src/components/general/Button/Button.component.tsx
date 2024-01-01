@@ -14,7 +14,7 @@ export default function Button({
 }: Props) {
   const whiteLoaders = ["primary"];
   if(isDisabled){
-    style.opacity = 0.1
+    style.opacity = 0.4
   }
   return (
     <button

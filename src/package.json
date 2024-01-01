@@ -1,6 +1,6 @@
 {
   "name": "ramees-ui",
-  "version": "1.0.15",
+  "version": "1.0.20",
   "description": "intial version",
   "main": "index.ts",
   "scripts": {
