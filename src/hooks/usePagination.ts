@@ -11,9 +11,14 @@ type Props = {
     setLoading: Dispatch<SetStateAction<boolean>>;
   }) => any;
   doFetch?: boolean;
+  dependencies?: unknown[];
 };
 
-export default function usePagination({ fetch, doFetch = true }: Props) {
+export default function usePagination({
+  fetch,
+  doFetch = true,
+  dependencies = [],
+}: Props) {
   const [datas, setDatas] = useState<any>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<any>(null);
@@ -60,6 +65,10 @@ export default function usePagination({ fetch, doFetch = true }: Props) {
     if (!doFetch) return;
     fetchHelper({});
   }, [doFetch, page]);
+
+  useEffect(() => {
+    resetAndFetch();
+  }, dependencies);
 
   return [datas, loading, error, loadMore, resetAndFetch, isCompleted];
 }

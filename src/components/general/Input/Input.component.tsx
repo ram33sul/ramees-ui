@@ -20,6 +20,7 @@ export default function Input({
         style={!label ? { paddingTop: "12px" } : {}}
         type={type}
         required
+        onWheel={e => e.preventDefault()}
       />
       <label
         className={`${styles.label} ${error ? styles.error : ""}`}
