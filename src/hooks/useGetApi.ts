@@ -42,5 +42,5 @@ export default function useGetApi(
     }
   }, dependencies);
 
-  return [data, loading, error, fetch];
+  return [data, loading, error, fetch, setData];
 }

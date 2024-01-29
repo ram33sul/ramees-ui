@@ -6,6 +6,7 @@
     border: 1px solid transparent;
     font-size: var(--medium-font);
     position: relative;
+    color: rgb(var(--foreground-color));
 }
 
 .button.loading {

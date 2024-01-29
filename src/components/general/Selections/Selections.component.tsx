@@ -1,47 +1,35 @@
-import { useEffect, useState } from "react";
 import styles from "./Selections.module.css";
-import React from 'react';
-
-type SelectionType = {
-  label: string,
-  value: string | number
-}
 
 type Props = {
-  selections: SelectionType[],
-  onChange: (selections: (string | number)[]) => unknown;
-  maxLimit: number,
-  defaultValue: (string | number)[]
+  selections?: {
+    label: string,
+    value: string | number
+  }[],
+  onChange?: (callback: (string | number)[]) => unknown,
+  maxLimit?: number,
+  values?: (string | number)[]
 }
 
 export default function Selections({
   selections = [],
   onChange = () => {},
   maxLimit = 1,
-  defaultValue = [],
+  values = [],
 }: Props) {
-  const [selectedSelections, setSelectedSelections] = useState<(string | number )[]>(defaultValue);
-
-  const limitReached = selectedSelections.length === maxLimit;
+  const limitReached = values.length === maxLimit;
 
   const handleSelect = (value: string | number) => () => {
-    if (selectedSelections.includes(value)) {
-      return setSelectedSelections(
-        selectedSelections.filter((val) => val !== value)
-      );
+    if (values.includes(value)) {
+      return onChange(values.filter((val) => val !== value));
     }
     if (limitReached) return;
-    setSelectedSelections((prev) => [...prev, value]);
+    onChange([...values, value]);
   };
-
-  useEffect(() => {
-    onChange(selectedSelections);
-  }, [selectedSelections]);
 
   return (
     <div className={styles.container}>
       {selections.map(({ label, value }) => {
-        const isActive = selectedSelections.includes(value);
+        const isActive = values.includes(value);
         return (
           <div
             onClick={handleSelect(value)}

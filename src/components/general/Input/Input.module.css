@@ -12,6 +12,7 @@
     transform: translateY(-50%);
     font-size: var(--small-font);
     transition: font-size 0.2s, top 0.2s, transform 0.2s;
+    text-transform: capitalize;
 }
 
 .input {
